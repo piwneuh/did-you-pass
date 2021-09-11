@@ -5,6 +5,9 @@ import './App.css'
 function App() {
   
   const [count, setCount] = useState(8)
+  localStorage.setItem('count', count)
+  const countt = localStorage.getItem('count');
+  console.log(countt)
 
   if(count == 0) {
     return(
